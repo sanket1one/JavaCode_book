@@ -1,0 +1,66 @@
+import java.util.*;
+import java.lang.*;
+
+public class Problem4 {
+	public static int count = 0;
+	public static String s1 = new String("");
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int cases = scan.nextInt();
+		for( int i =0 ; i < cases; i++) {
+			int length = scan.nextInt();
+			String str = scan.next();
+			
+			System.out.println(Counter(str,length));
+			count = 0;
+			s1 = "";
+		}
+	
+	}
+	
+	public static boolean palindrome(String str) {
+		int size = str.length();
+		String f = str.substring(0,1);
+		String l = str.substring(size -1);
+		if(size == 0  || size == 1) {
+			return true;
+		}
+		
+		if(size == 2) {
+			if(l.equals(f)) return true;
+		}else if(l.equals(f)) {
+			
+			return palindrome(str.substring(1,size -1));
+		}
+		
+		return false;
+		
+	}
+	
+	
+	public static int Counter(String str,int len) {
+			if(len == 1) {
+				count += 1;
+				return count;
+			}		
+			for(int i = 0; i< len; i++) {
+				Random rand = new Random();
+				int rand_int;
+				String s = "";
+				do{
+					rand_int = rand.nextInt(len);
+					s = s.concat(String.valueOf(rand_int));
+					
+				}while(!str.contains(s)); 
+				str = str.substring(0,rand_int) + str.substring(rand_int+1);
+				if(palindrome(str)) {
+					count +=1;
+				}
+				count += Counter(str,str.length());
+				
+			}
+				
+		return count;
+	}
+}

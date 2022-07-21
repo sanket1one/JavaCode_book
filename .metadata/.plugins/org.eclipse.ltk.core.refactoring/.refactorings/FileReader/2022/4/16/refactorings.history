@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;FileReader/secret_message.txt&apos; to &apos;art.txt&apos;" description="Rename resource &apos;secret_message.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="secret_message.txt" name="art.txt" stamp="1649710070039" updateReferences="true"/>
+</session>

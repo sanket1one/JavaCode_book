@@ -1,0 +1,24 @@
+import java.util.*;
+public class problem10 {
+	public static void main(String[] args) {
+		int[] arr1 = {1,5,9,3,6,2};
+		int[] arr2 = {4,2, 9,2,4,6,7};
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		int p = 0; 
+		int q= 0;
+		int count = 0;
+		while(p < arr1.length && q< arr2.length) {
+			if(arr1[p]  == arr2[q]) {
+				count +=1;
+				p++;
+				q++;
+			}else if(arr1[p] > arr2[q]) {
+				q++;
+			}else {
+				p++;
+			}
+		}
+		System.out.println(count);
+	}
+}

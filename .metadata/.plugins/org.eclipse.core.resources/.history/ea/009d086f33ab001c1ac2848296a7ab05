@@ -1,0 +1,41 @@
+public class Main {
+	
+	public static void main(String[] args) {
+		
+//		Car myCar1 = new Car();
+//		Car myCar2 = new Car();
+//		
+//		System.out.println(myCar1.model);
+//		System.out.printf(myCar1.make);
+//		System.out.println();
+//		System.out.println(myCar1.model);
+//		System.out.printf(myCar1.make);
+//		
+////		myCar.drive();
+////		myCar.brake();
+		
+//		Human first= new Human("sanket", 20, 60);
+//		Human second = new Human("aniket",18, 55);
+//		
+//		System.out.println(first.name);
+//		first.eat();
+//		System.out.println(second.name);
+//		second.drink();
+		
+//		DiceRoller diceRoller = new DiceRoller();
+		
+//		Pizza pizza = new Pizza("thicc crust", "tomato", "mozzerella", "pepperoni");
+//		
+//		System.out.println("Here are the ingredients of your pizza");
+//		System.out.println(pizza.bread);
+//		System.out.println(pizza.suace);
+//		System.out.println(pizza.cheese);
+//		System.out.println(pizza.topping);
+		
+		Car car = new Car();
+
+		System.out.println(car.toString());
+	
+	}
+
+}
